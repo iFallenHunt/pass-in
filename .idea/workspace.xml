@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76557bc5-fbcf-413f-943d-99eaa43eb373" name="Changes" comment="Update Database">
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/config/ExceptionEntityHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/domain/event/exceptions/EventNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/dto/attendee/AttendeeDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/dto/attendee/AttendeesListResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/services/AttendeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/controllers/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/domain/attendee/Attendee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/domain/attendee/Attendee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/dto/event/EventResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/dto/event/EventResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/repositories/ChekinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/repositories/CheckInRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/services/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/services/EventService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database/myDb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/myDb.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database/myDb.script" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/myDb.script" afterDir="false" />
@@ -18,8 +19,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/database/myDb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/myDb.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/database/myDb.script" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/myDb.script" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/controllers/EventController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/controllers/EventController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/domain/attendee/Attendee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/domain/attendee/Attendee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/repositories/AttendeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/repositories/AttendeeRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/services/EventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/services/EventService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,27 +72,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.PassInApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Users/Lucas Santos/Documents/Programas/Java/pass-in&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.PassInApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Users/Lucas Santos/Documents/Programas/Java/pass-in",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="PassInApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -126,7 +126,7 @@
       <workItem from="1713026296611" duration="651000" />
       <workItem from="1713037209839" duration="4094000" />
       <workItem from="1713041339954" duration="131000" />
-      <workItem from="1713194517137" duration="8183000" />
+      <workItem from="1713194517137" duration="12898000" />
     </task>
     <task id="LOCAL-00001" summary="Update Database">
       <option name="closed" value="true" />
@@ -224,7 +224,71 @@
       <option name="project" value="LOCAL" />
       <updated>1713203929253</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Creating ERROR Exceptions">
+      <option name="closed" value="true" />
+      <created>1713207211926</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713207211926</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update Attendee Class">
+      <option name="closed" value="true" />
+      <created>1713207229647</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713207229647</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update Event Controller">
+      <option name="closed" value="true" />
+      <created>1713207244225</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713207244225</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update DTO">
+      <option name="closed" value="true" />
+      <created>1713207256380</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713207256380</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update Attendee Repositories">
+      <option name="closed" value="true" />
+      <created>1713207274732</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713207274732</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Update EventService Class">
+      <option name="closed" value="true" />
+      <created>1713207290264</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713207290264</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Update Database">
+      <option name="closed" value="true" />
+      <created>1713207303071</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713207303071</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Update Database">
+      <option name="closed" value="true" />
+      <created>1713207340181</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713207340181</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +315,12 @@
     <MESSAGE value="creation of the event's DTOs" />
     <MESSAGE value="Creating controllers" />
     <MESSAGE value="Repository creation" />
+    <MESSAGE value="Creating ERROR Exceptions" />
+    <MESSAGE value="Update Attendee Class" />
+    <MESSAGE value="Update Event Controller" />
+    <MESSAGE value="Update DTO" />
+    <MESSAGE value="Update Attendee Repositories" />
+    <MESSAGE value="Update EventService Class" />
     <MESSAGE value="Update Database" />
     <option name="LAST_COMMIT_MESSAGE" value="Update Database" />
   </component>

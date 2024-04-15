@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 5025
+SET FILES CHECK 6061
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -58,5 +58,6 @@ INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1
 INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',-1224932415,'SA','2024-04-13 17:16:23.780896',93,'1')
 INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',-52053718,'SA','2024-04-13 17:16:23.800284',2,'1')
 INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',553901455,'SA','2024-04-13 17:16:23.808973',1,'1')
+INSERT INTO EVENTS VALUES('70a0a36c-e2d4-4106-a678-2c13879f048c','Rocketseat NLW Unite','Aprenda v\u00e1rias tecnologias de forma gratuira e online!','rocketseat-nlw-unite',1000)
 INSERT INTO EVENTS VALUES('ee0a2ef3-8f26-4b77-b9a2-f7a8cc2bfaf5','Nova API Check-in','Segunda aplica\u00e7\u00e3o por que a primeira foi excluida','nova-api-checkin',50)
 INSERT INTO EVENTS VALUES('ee7402c3-d10a-4df6-bd80-035090abcc8c','Nova API Check-in 2.0','Segunda aplica\u00e7\u00e3o por que a primeira foi excluida','nova-api-checkin-20',50)
