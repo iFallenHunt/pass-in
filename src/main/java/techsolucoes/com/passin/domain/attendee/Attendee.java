@@ -27,7 +27,7 @@ public class Attendee {
     private String email;
 
     @ManyToOne
-    @JoinColumn(name = "evente_id", nullable = false)
+    @JoinColumn(name = "event_id", nullable = false)
     private Event event;
 
     @Column(name = "created_at")
