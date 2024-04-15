@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import techsolucoes.com.passin.domain.attendee.Attendee;
 import techsolucoes.com.passin.domain.event.Event;
+import techsolucoes.com.passin.domain.event.exceptions.EventNotFoundException;
 import techsolucoes.com.passin.dto.event.EventIdDTO;
 import techsolucoes.com.passin.dto.event.EventRequestDTO;
 import techsolucoes.com.passin.dto.event.EventResponseDTO;
@@ -21,7 +22,8 @@ public class EventService {
 
     //metodo usado para criar a listação do evento e a quantidade de presenças
     public EventResponseDTO getEventDetail(String eventId) {
-        Event event = this.eventRepository.findById(eventId).orElseThrow(() -> new RuntimeException("Event not found " + "with id " + eventId));
+        Event event =
+                this.eventRepository.findById(eventId).orElseThrow(() -> new EventNotFoundException("Event not found " + "with id " + eventId));
         List<Attendee> attendeeList = this.attendeeRepository.findByEventId(eventId);
         return new EventResponseDTO(event, attendeeList.size());
     }
