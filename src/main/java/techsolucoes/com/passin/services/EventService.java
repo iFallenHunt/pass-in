@@ -8,7 +8,6 @@ import techsolucoes.com.passin.domain.event.exceptions.EventNotFoundException;
 import techsolucoes.com.passin.dto.event.EventIdDTO;
 import techsolucoes.com.passin.dto.event.EventRequestDTO;
 import techsolucoes.com.passin.dto.event.EventResponseDTO;
-import techsolucoes.com.passin.repositories.AttendeeRepository;
 import techsolucoes.com.passin.repositories.EventRepository;
 
 import java.text.Normalizer;
@@ -18,13 +17,13 @@ import java.util.List;
 @RequiredArgsConstructor
 public class EventService {
     private final EventRepository eventRepository;
-    private final AttendeeRepository attendeeRepository;
+    private final AttendeeService attendeeService;
 
     //metodo usado para criar a listação do evento e a quantidade de presenças
     public EventResponseDTO getEventDetail(String eventId) {
         Event event =
                 this.eventRepository.findById(eventId).orElseThrow(() -> new EventNotFoundException("Event not found " + "with id " + eventId));
-        List<Attendee> attendeeList = this.attendeeRepository.findByEventId(eventId);
+        List<Attendee> attendeeList = this.attendeeService.getAllAttendeesFromEvent(eventId);
         return new EventResponseDTO(event, attendeeList.size());
     }
 
