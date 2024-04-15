@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76557bc5-fbcf-413f-943d-99eaa43eb373" name="Changes" comment="Data create" />
+    <list default="true" id="76557bc5-fbcf-413f-943d-99eaa43eb373" name="Changes" comment="Repository creation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/myDb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/myDb.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/myDb.script" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/myDb.script" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/myDb.lck" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/myDb.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/myDb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/myDb.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/myDb.script" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/myDb.script" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,14 +20,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "iFallenHunt"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/iFallenHunt/pass-in.git",
+    "accountId": "bde28f5e-7a6f-45a9-b488-b2bcdcd38f12"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -36,31 +56,34 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2f3GnilzNZYW1bOsrPipa0UpRfP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.PassInApplication.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/Users/Lucas Santos/Documents/Programas/Java/pass-in",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.PassInApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Users/Lucas Santos/Documents/Programas/Java/pass-in&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="PassInApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -93,15 +116,117 @@
       <workItem from="1713026296611" duration="651000" />
       <workItem from="1713037209839" duration="4094000" />
       <workItem from="1713041339954" duration="131000" />
+      <workItem from="1713194517137" duration="5373000" />
     </task>
+    <task id="LOCAL-00001" summary="Update Database">
+      <option name="closed" value="true" />
+      <created>1713042364266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713042364266</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update Event.class">
+      <option name="closed" value="true" />
+      <created>1713042375003</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713042375003</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Creating Controllers">
+      <option name="closed" value="true" />
+      <created>1713042397222</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713042397222</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Creation of Repositories">
+      <option name="closed" value="true" />
+      <created>1713042424363</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713042424363</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Creating Controllers">
+      <option name="closed" value="true" />
+      <created>1713042433620</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713042433620</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update Domain">
+      <option name="closed" value="true" />
+      <created>1713042454473</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713042454473</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Creating and listing the event">
+      <option name="closed" value="true" />
+      <created>1713203795507</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713203795507</updated>
+    </task>
+    <task id="LOCAL-00008" summary="creation of the event's DTOs">
+      <option name="closed" value="true" />
+      <created>1713203832593</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713203832593</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Creating controllers">
+      <option name="closed" value="true" />
+      <created>1713203855239</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713203855239</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Repository creation">
+      <option name="closed" value="true" />
+      <created>1713203879761</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713203879761</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Data create" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data create" />
+    <MESSAGE value="Update Database" />
+    <MESSAGE value="Update Event.class" />
+    <MESSAGE value="Creation of Repositories" />
+    <MESSAGE value="Creating Controllers" />
+    <MESSAGE value="Update Domain" />
+    <MESSAGE value="Creating and listing the event" />
+    <MESSAGE value="creation of the event's DTOs" />
+    <MESSAGE value="Creating controllers" />
+    <MESSAGE value="Repository creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repository creation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
