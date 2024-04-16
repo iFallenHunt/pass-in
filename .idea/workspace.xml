@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76557bc5-fbcf-413f-943d-99eaa43eb373" name="Changes" comment="Database Update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/domain/attendee/exceptions/AttendeeAlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/domain/attendee/exceptions/AttendeeNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/domain/checkin/exceptions/CheckInAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/domain/event/exceptions/EventFullException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/dto/attendee/AttendeeBadgeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/dto/attendee/AttendeeBadgeResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/dto/attendee/AttendeeIdDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/dto/attendee/AttendeeRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/dto/general/ErrorResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/services/CheckInService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/config/ExceptionEntityHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/config/ExceptionEntityHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/controllers/AttendeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/controllers/AttendeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/controllers/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/repositories/AttendeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/repositories/AttendeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/services/AttendeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/services/AttendeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/services/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/techsolucoes/com/passin/services/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/myDb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/myDb.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/myDb.script" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/myDb.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/myDb.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/myDb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/myDb.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/myDb.script" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/myDb.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/controllers/AttendeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/controllers/AttendeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/controllers/EventController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/controllers/EventController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/repositories/AttendeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/repositories/AttendeeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/services/AttendeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/services/AttendeeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/services/EventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/techsolucoes/com/passin/services/EventService.class" afterDir="false" />
-    </list>
+    <list default="true" id="76557bc5-fbcf-413f-943d-99eaa43eb373" name="Changes" comment="updating the database" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +116,7 @@
       <workItem from="1713037209839" duration="4094000" />
       <workItem from="1713041339954" duration="131000" />
       <workItem from="1713194517137" duration="15223000" />
-      <workItem from="1713284700936" duration="8190000" />
+      <workItem from="1713284700936" duration="8492000" />
     </task>
     <task id="LOCAL-00001" summary="Update Database">
       <option name="closed" value="true" />
@@ -354,7 +326,71 @@
       <option name="project" value="LOCAL" />
       <updated>1713214943008</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="error handling">
+      <option name="closed" value="true" />
+      <created>1713300491407</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713300491407</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Updating the attendees class">
+      <option name="closed" value="true" />
+      <created>1713300548048</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713300548048</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Updating the Controllers class">
+      <option name="closed" value="true" />
+      <created>1713300586375</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1713300586375</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Updating the Repositories class">
+      <option name="closed" value="true" />
+      <created>1713300609658</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1713300609658</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Updating the Repositories class">
+      <option name="closed" value="true" />
+      <created>1713300627831</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1713300627831</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Generic error handling class">
+      <option name="closed" value="true" />
+      <created>1713300683115</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1713300683115</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Error configuration class">
+      <option name="closed" value="true" />
+      <created>1713300704793</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1713300704793</updated>
+    </task>
+    <task id="LOCAL-00034" summary="updating the database">
+      <option name="closed" value="true" />
+      <created>1713300717397</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1713300717397</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,9 +408,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Data create" />
-    <MESSAGE value="Update Event.class" />
-    <MESSAGE value="Creation of Repositories" />
     <MESSAGE value="Creating Controllers" />
     <MESSAGE value="Update Domain" />
     <MESSAGE value="Creating and listing the event" />
@@ -393,7 +426,14 @@
     <MESSAGE value="Update repositories" />
     <MESSAGE value="Create and Update EventController" />
     <MESSAGE value="Database Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database Update" />
+    <MESSAGE value="error handling" />
+    <MESSAGE value="Updating the attendees class" />
+    <MESSAGE value="Updating the Controllers class" />
+    <MESSAGE value="Updating the Repositories class" />
+    <MESSAGE value="Generic error handling class" />
+    <MESSAGE value="Error configuration class" />
+    <MESSAGE value="updating the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating the database" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
