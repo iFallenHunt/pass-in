@@ -1,34 +1,53 @@
-# Pass In - Event Management
+# Pass-In
 
-Pass In is a Java application with Spring Boot for managing face-to-face events. 
+Pass-In is a participant management application for in-person events. 
+It allows organizers to register events, open public registration pages, and enables registered participants to issue credentials for event check-in on the day of the event.
 
-This application allows organizers to register events, open public registration pages and check-in participants on the day of the event. 
+## Utilized Technologies
 
-Participants can register, view their registration badges and check in using a QR code.
+- Java
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- HSQLDB
+- Flyway (for database migration)
+- Lombok
+- Spring Dev Tools
 
+## Functional Requirements
 
-### Technologies used
+- Organizer can register a new event
+- Organizer can view event data
+- Organizer can view the list of participants
+- Participant can register for an event
+- Participant can view their registration badge
+- Participant can check in to the event
 
-    Spring Boot: Framework used to quickly create Spring applications based on Java.
+## Business Rules
 
-    Spring Web: Spring Framework module for developing web applications.
+- Participant can only register for an event once
+- Participant can only register for events with available slots
+- Participant can only check in to an event once
 
-    Spring Data JPA: Facilitates data access with the object-relational 
-    mapping (ORM) standard for JPA.
+## Non-Functional Requirements
 
-    HSQLDB: In-memory relational database for the development environment.
-    
-    Flyway: Version control tool for SQL databases.
+- Event check-in is performed via a QR Code
 
-    Lombok: Java library that helps reduce code verbosity by automatically 
-    generating getters, setters, constructors, etc.
+## Running the Project
 
-    Spring DevTools: Set of development tools for automatically 
-    restarting the server at development time.
+You can use any API management software such as INSOMNIA, APIDog, Postman, etc...
+1. Clone the repository: `git clone https://github.com/seu-usuario/pass-in.git`
+2. Navigate to the project directory: `cd pass-in`
+3. Run the application: `./mvnw spring-boot:run`
 
-### How to run the project
+Within the code, it is possible to view all consumption paths.
 
-    Clone this repository: git clone https://github.com/seu-usuario/pass-in.git
-    Navigate to the project directory: cd pass-in
-    Run the application using Maven: mvn spring-boot:run
-    Access the application in your browser: http://localhost:8080
+Make sure you have Java and Maven installed on your machine.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues to report bugs or suggest new features. Pull requests are also encouraged.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
