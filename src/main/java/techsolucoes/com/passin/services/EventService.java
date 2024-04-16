@@ -4,13 +4,17 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import techsolucoes.com.passin.domain.attendee.Attendee;
 import techsolucoes.com.passin.domain.event.Event;
+import techsolucoes.com.passin.domain.event.exceptions.EventFullException;
 import techsolucoes.com.passin.domain.event.exceptions.EventNotFoundException;
+import techsolucoes.com.passin.dto.attendee.AttendeeIdDTO;
+import techsolucoes.com.passin.dto.attendee.AttendeeRequestDTO;
 import techsolucoes.com.passin.dto.event.EventIdDTO;
 import techsolucoes.com.passin.dto.event.EventRequestDTO;
 import techsolucoes.com.passin.dto.event.EventResponseDTO;
 import techsolucoes.com.passin.repositories.EventRepository;
 
 import java.text.Normalizer;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -21,8 +25,7 @@ public class EventService {
 
     //metodo usado para criar a listação do evento e a quantidade de presenças
     public EventResponseDTO getEventDetail(String eventId) {
-        Event event =
-                this.eventRepository.findById(eventId).orElseThrow(() -> new EventNotFoundException("Event not found " + "with id " + eventId));
+        Event event = this.getEventById(eventId);
         List<Attendee> attendeeList = this.attendeeService.getAllAttendeesFromEvent(eventId);
         return new EventResponseDTO(event, attendeeList.size());
     }
@@ -37,6 +40,28 @@ public class EventService {
 
         this.eventRepository.save(newEvent);
         return new EventIdDTO(newEvent.getId());
+    }
+
+    public AttendeeIdDTO registerAttendeeOnEvent(String eventId, AttendeeRequestDTO attendeeRequestDTO){
+        this.attendeeService.verifyAttendeeSubscription(attendeeRequestDTO.email(), eventId);
+
+        Event event = this.getEventById(eventId);
+        List<Attendee> attendeeList = this.attendeeService.getAllAttendeesFromEvent(eventId);
+
+        if(event.getMaximumAttendees() <= attendeeList.size()) throw new EventFullException("Event is full");
+
+        Attendee newAttendee = new Attendee();
+        newAttendee.setName(attendeeRequestDTO.name());
+        newAttendee.setEmail(attendeeRequestDTO.email());
+        newAttendee.setEvent(event);
+        newAttendee.setCreatedAt(LocalDateTime.now());
+        this.attendeeService.registerAttendee(newAttendee);
+
+        return new AttendeeIdDTO(newAttendee.getId());
+    }
+
+    private Event getEventById (String eventId) {
+        return this.eventRepository.findById(eventId).orElseThrow(() -> new EventNotFoundException("Event not found " + "with id " + eventId));
     }
 
     /*Este código define um método createSluc que recebe uma entrada de texto, normaliza-a, remove marcas diacríticas,
