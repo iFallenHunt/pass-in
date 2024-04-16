@@ -4,6 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
+import techsolucoes.com.passin.dto.attendee.AttendeeIdDTO;
+import techsolucoes.com.passin.dto.attendee.AttendeeRequestDTO;
 import techsolucoes.com.passin.dto.attendee.AttendeesListResponseDTO;
 import techsolucoes.com.passin.dto.event.EventIdDTO;
 import techsolucoes.com.passin.dto.event.EventRequestDTO;
@@ -31,6 +33,17 @@ public class EventController {
         var uri = uriComponentsBuilder.path("/events/{id}").buildAndExpand(eventIdDTO.eventId()).toUri();
 
         return ResponseEntity.created(uri).body(eventIdDTO);
+    }
+
+    @PostMapping("/{eventId}/attendees")
+    public ResponseEntity<AttendeeIdDTO> registerParticipant(@PathVariable String eventId,
+                                                          @RequestBody AttendeeRequestDTO body,
+                                          UriComponentsBuilder uriComponentsBuilder) {
+        AttendeeIdDTO attendeeIdDTO = this.eventService.registerAttendeeOnEvent(eventId, body);
+//no codigo dela ela errou e colocou /attendees/{attendId}" se der erro voltar nessa parte
+        var uri = uriComponentsBuilder.path("/attendees/{attendeeId}").buildAndExpand(attendeeIdDTO.attendeeId()).toUri();
+
+        return ResponseEntity.created(uri).body(attendeeIdDTO);
     }
 
     @GetMapping("/attendees/{id}")
