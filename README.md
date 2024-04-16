@@ -1,5 +1,7 @@
 # Pass-In
 
+[Portuguese Version](README.pt.md)
+
 Pass-In is a participant management application for in-person events. 
 It allows organizers to register events, open public registration pages, and enables registered participants to issue credentials for event check-in on the day of the event.
 
